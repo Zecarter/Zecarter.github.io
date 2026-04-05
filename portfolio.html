@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Carter-McConnell | Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="btn">Home</a>
+            <a href="#footer-contact" class="btn">Contact</a>
+        </nav>
+
+        <header class="portfolio-header">
+            <h1>Portfolio</h1>
+            <div class="header-line"></div>
+        </header>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="instruction">Instruction</button>
+            <button class="filter-btn" data-filter="collection">Collection Management</button>
+            <button class="filter-btn" data-filter="indigenization">Indigenization Initiatives</button>
+            <button class="filter-btn" data-filter="reflections">Reflections</button>
+        </div>
+
+        <section class="project-list" id="project-grid">
+            <div class="project-card" data-category="instruction">
+                <div class="project-image">
+                    <img src="assets/library.png" alt="Library Interior" class="arched-img-medium">
+                </div>
+                <div class="project-info">
+                    <h3>Library Instruction Workshop</h3>
+                    <p class="project-description">Information Literacy Session for Undergraduates</p>
+                    <a href="#" class="btn small">Link to file</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="collection">
+                <div class="project-image">
+                    <img src="assets/library.png" alt="Library Interior" class="arched-img-medium">
+                </div>
+                <div class="project-info">
+                    <h3>Metadata Migration Audit</h3>
+                    <p class="project-description">Analysis of ILS record integrity</p>
+                    <a href="#" class="btn small">Link to file</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="indigenization">
+                <div class="project-image">
+                    <img src="assets/library.png" alt="Library Interior" class="arched-img-medium">
+                </div>
+                <div class="project-info">
+                    <h3>Curriculum Resource Guide</h3>
+                    <p class="project-description">First Nations Curriculum Perspectives</p>
+                    <a href="#" class="btn small">Link to file</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="reflections">
+                <div class="project-image">
+                    <img src="assets/library.png" alt="Library Interior" class="arched-img-medium">
+                </div>
+                <div class="project-info">
+                    <h3>Professional Philosophy</h3>
+                    <p class="project-description">Reflections on Evidence-Based Practice</p>
+                    <a href="#" class="btn small">Link to file</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-img-container">
+                <img src="assets/dog.png" alt="Dog" class="arched-img-small">
+                <p>My dog, Orla!</p>
+            </div>
+            
+            <div id="footer-contact" class="footer-contact">
+                <h2>Get in Touch</h2>
+                <div class="footer-line"></div>
+                
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h5>Contact</h5>
+                        <div class="footer-link-item">
+                            <i class="fas fa-envelope"></i> sam.carter92@gmail.com
+                        </div>
+                        <div class="footer-link-item">
+                            <i class="fab fa-linkedin"></i> linkedin.com/in/sam-carter
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h5>Navigation</h5>
+                        <div class="footer-link-item"><a href="/">Home</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/portfolio.js"></script>
+</body>
+</html>
