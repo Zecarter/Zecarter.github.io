@@ -1,0 +1,352 @@
+/* Global Styles */
+:root {
+    --bg-color: #FCFAF5;
+    --primary-brown: #8C6A4F;
+    --dark-brown: #74563E;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --card-border: #E0E0E0;
+    --card-bg: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-brown);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 40px 0;
+}
+
+.btn {
+    background-color: var(--primary-brown);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--dark-brown);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.arched-img-large {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 200px 200px 0 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    letter-spacing: 1px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.arched-img-medium {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 175px 175px 0 0;
+}
+
+.img-caption {
+    font-size: 0.7rem;
+    color: #999;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Highlights Section */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.card-highlight {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #E8F0EA;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #5D8A66;
+    font-size: 1.4rem;
+}
+
+.card-highlight h3 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.card-highlight p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* Resume Section */
+.resume {
+    margin-bottom: 100px;
+}
+
+.section-header {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--primary-brown);
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.resume-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.resume-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.resume-card h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    color: var(--primary-brown);
+    text-transform: uppercase;
+}
+
+.resume-date {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.resume-location {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.resume-card ul {
+    padding-left: 20px;
+}
+
+.resume-card li {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.btn-center-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-brown);
+    color: white;
+    padding: 60px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-img-container {
+    text-align: center;
+}
+
+.arched-img-small {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100px 100px 0 0;
+    border: 3px solid white;
+}
+
+.footer-img-container p {
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.footer-contact {
+    flex: 1;
+    max-width: 600px;
+    margin-left: 60px;
+}
+
+.footer-contact h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer-line {
+    height: 1px;
+    background-color: rgba(255,255,255,0.3);
+    margin-bottom: 30px;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-col h5 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.footer-link-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #E0E0E0;
+}
+
+.footer-link-item i {
+    font-size: 1.1rem;
+    color: #E0E0E0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .hero, .about, .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+    .footer-img-container {
+        margin: auto;
+    }
+    .footer-contact {
+        margin-left: 0;
+        margin-top: 40px;
+        text-align: left;
+    }
+}
