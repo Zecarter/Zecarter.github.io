@@ -252,10 +252,24 @@ footer {
     color: #E0E0E0;
 }
 
-/* Responsive */
+/* Mobile CSS */
 @media (max-width: 900px) {
-    .project-card { flex-direction: column; }
-    .project-image { height: 200px; }
-    .footer-content { flex-direction: column; text-align: center; }
-    .footer-contact { margin-left: 0; margin-top: 30px; }
+    .project-card { 
+        flex-direction: column; 
+    }
+    .project-image { 
+        height: 200px; 
+    }
+    .footer-content { 
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-img-container {
+        margin: auto;
+    }
+    .footer-contact {
+        margin-left: 0;
+        margin-top: 40px;
+        text-align: left;
+    }
 }

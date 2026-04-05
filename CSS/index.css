@@ -326,7 +326,7 @@ footer {
     color: #E0E0E0;
 }
 
-/* Responsive Design */
+/* Mobile CSS */
 @media (max-width: 900px) {
     .hero, .about, .footer-content {
         flex-direction: column;
